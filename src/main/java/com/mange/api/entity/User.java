@@ -1,10 +1,17 @@
 package com.mange.api.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
-public class EnityName {
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class User   {
     private Integer id;
 
     private String username;
@@ -20,13 +27,18 @@ public class EnityName {
 
     private String phone;
 
-    private Long expired;
+    private String avatar;
+
+    private  long expired;
 
     private int status;
 
-    private Long created;
+    private long created;
 
-    private Long updated;
+    private long updated;
 
+    private int role_id;
+
+    private Role role;
 
 }
